@@ -1,0 +1,408 @@
+img{
+    width: 150px;
+}
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4a5568;
+    background-color: #fafafa;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2d3748;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 50px 0 0px 0;
+    color: #2d3748;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 24px 0 12px 0;
+    color: #2d3748;
+}
+
+p {
+    margin-bottom: 16px;
+    color: #718096;
+}
+
+/* Links */
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6f42c1;
+}
+
+/* Strong text for tech stacks */
+strong {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+/* Lists */
+ul, ol {
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #718096;
+}
+
+/* Header */
+header {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    text-align: left;
+}
+
+/* Profile Card Layout */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 18% 18%;
+    border: 3px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    margin: 0 0 8px 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.profile-title {
+    font-size: 18px;
+    color: #718096;
+    margin: 0;
+}
+
+/* Header links container */
+.header-links {
+    margin-top: 16px;
+}
+
+/* Header link buttons */
+.header-links a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px 8px 4px 0;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.header-links a:hover {
+    background-color: #edf2f7;
+    border-color: #cbd5e0;
+    color: #2d3748;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-links a:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav {
+    margin: 32px 0;
+    padding: 16px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 8px;
+    padding: 8px 12px;
+    color: #718096;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: #f7fafc;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    margin-bottom: 48px;
+}
+
+/* Simple Projects List Styling */
+.simple-projects-list p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.simple-projects-list a {
+    color: #2d3748;
+    text-decoration: none;
+    border-bottom: 1px solid #cbd5e0;
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+}
+
+.simple-projects-list a:hover {
+    border-color: #4a5568;
+}
+
+section#simple-projects {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Tech stack structured layout */
+.tech-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.tech-category {
+    background-color: #edf2f7;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border-left: 3px solid #38b2ac;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tech-category.learning {
+    border-left-color: #805ad5;
+}
+
+.category-name {
+    font-weight: 700;
+    color: #1a202c;
+    font-size: 14px;
+    display: block;
+}
+
+.tech-items {
+    color: #2d3748;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+}
+
+/* Mobile responsiveness for tech categories */
+@media (max-width: 768px) {
+    .tech-category {
+        flex: 1 1 100%;
+    }
+}
+
+/* Contact section links styling */
+section#contact a {
+    color: #000;
+    text-decoration: underline;
+}
+
+section#contact a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+section#contact a:visited {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Useful links section styling */
+section#useful-links a {
+    color: #000;
+    text-decoration: underline;
+}
+
+section#useful-links a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+section#useful-links a:visited {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #a0aec0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 24px 16px;
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+    }
+    
+    /* Mobile profile card  */
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-info h1 {
+        font-size: 24px;
+        white-space: nowrap;
+    }
+    
+    .profile-title {
+        font-size: 16px;
+    }
+    
+    /* Center header links on mobile */
+    .header-links {
+        text-align: center;
+    }
+    
+    section#projects .project {
+        padding: 16px;
+    }
+    
+    section#projects h3 {
+        padding: 10px 12px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    a:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: #666;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        page-break-after: avoid;
+    }
+    
+    section#projects h3,
+    section#skills p {
+        background: none !important;
+        border: none !important;
+    }
+}
+
+p1{
+    text-align: center;
+}
